@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Clima</title>
 </head>
 <body>
@@ -17,35 +21,36 @@
                 <input type="text" placeholder="Nome da cidade" id="cityName"/>
             </div>
             <div class="container__searchBox__searchButton">
-                <button type="button" id="searchButton"><i class="bi bi-search"></i></button>
+                <button type="button" id="search"><i class="bi bi-search"></i></button>
             </div>
         </div>
         <div class="container__notFound">
-            <img src="./images/404.png" alt="Localização inválida">
+            <img src="./images/404.png">
             <h3>Oops! Localização inválida 😿</h3>
             <p>Tente dessa forma: <span style="font-weight: bold">Rio de janeiro</span></p>
         </div>
         <div class="container__weatherBox">
             <img src="">
-            <p class="container__weatherBox__temperature"></p>
-            <p class="container__weatherBox__description"></p>
+            <h1 id="temperature"></h1>
+            <h3 id="description"></h3>
         </div>
         <div class="container__weatherDetails">
             <div class="container__weatherDetails__humidity">
                 <div class="container__weatherDetails__text">
                     <i class="bi bi-water"></i>
-                    <span></span>
+                    <span id="humidity"></span>
                     <p>Humidade</p>
                 </div>
             </div>
             <div class="conteiner__watherDetails__wind">
                 <div class="container__weatherDetails__text"></div>
                     <i class="bi bi-wind"></i>
-                    <span></span>
-                    <p>Velocidade do vento</p>
+                    <span id="wind"></span>
+                    <p>Velocidade do Vento</p>
                 </div>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
