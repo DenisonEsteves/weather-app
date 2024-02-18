@@ -1,5 +1,5 @@
-![image](https://github.com/DenisonEsteves/weather-app/assets/67080663/e81b46bb-dfd5-4c2a-83cb-c78b5ea24118)
+![image](https://github.com/DenisonEsteves/weather-app/assets/67080663/f74b7017-d072-44ce-b04b-5fc77be07b20)
 
-![image](https://github.com/DenisonEsteves/weather-app/assets/67080663/365bd846-b993-439e-9c96-6d3796533f9b)
+![image](https://github.com/DenisonEsteves/weather-app/assets/67080663/0fcfefa2-ab6f-4ad3-abcf-57c114c00f0b)
 
-![image](https://github.com/DenisonEsteves/weather-app/assets/67080663/337c2d7e-3c66-4016-8d22-9f475c8e676d)
+![image](https://github.com/DenisonEsteves/weather-app/assets/67080663/56abd424-e6a7-4aa9-97b0-28855e72613c)
