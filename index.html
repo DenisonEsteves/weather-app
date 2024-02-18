@@ -14,10 +14,36 @@
                 <i class="bi bi-geo-alt-fill"></i>   
             </div>
             <div class="container__searchBox__cityName">
-                <input type="text" placeholder="Nome da cidade"/>
+                <input type="text" placeholder="Nome da cidade" id="cityName"/>
             </div>
             <div class="container__searchBox__searchButton">
-                <button type="button"><i class="bi bi-search"></i></button>
+                <button type="button" id="searchButton"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+        <div class="container__notFound">
+            <img src="./images/404.png" alt="Localização inválida">
+            <h3>Oops! Localização inválida 😿</h3>
+            <p>Tente dessa forma: <span style="font-weight: bold">Rio de janeiro</span></p>
+        </div>
+        <div class="container__weatherBox">
+            <img src="">
+            <p class="container__weatherBox__temperature"></p>
+            <p class="container__weatherBox__description"></p>
+        </div>
+        <div class="container__weatherDetails">
+            <div class="container__weatherDetails__humidity">
+                <div class="container__weatherDetails__text">
+                    <i class="bi bi-water"></i>
+                    <span></span>
+                    <p>Humidade</p>
+                </div>
+            </div>
+            <div class="conteiner__watherDetails__wind">
+                <div class="container__weatherDetails__text"></div>
+                    <i class="bi bi-wind"></i>
+                    <span></span>
+                    <p>Velocidade do vento</p>
+                </div>
             </div>
         </div>
     </div>
