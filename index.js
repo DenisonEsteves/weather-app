@@ -31,7 +31,7 @@ search.addEventListener("click", () => {
                 return;
             }else{
                 notFound.style.display = "none";
-                notFound.classList.remote = "container__fadeIn";
+                notFound.classList.remove = "container__fadeIn";
                 container.classList.add("container__fadeIn");
                 weatherBox.style.display = "flex";
                 weatherDetails.style.display = "flex";
@@ -64,9 +64,5 @@ search.addEventListener("click", () => {
                 weatherDetails.classList.add("container__fadeIn");
                 container.style.height = "600px";
             }
-
-        })
-        .catch((e) =>{
-            console.error("Error: " + e);
         });
-})
+});
