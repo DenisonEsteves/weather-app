@@ -1,3 +1,5 @@
+import { APIKEY } from './config.js';
+
 const cityName = document.getElementById("cityName");
 const search = document.getElementById("search");
 const temperature = document.getElementById("temperature");
@@ -16,7 +18,6 @@ search.addEventListener("click", () => {
     if(cityName.value === '')
         return;
 
-    const APIKEY = "9fd8c3eb38bdd8f6428ae4a612d2393d";
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&lang=pt_br&appid=${APIKEY}`
 
     fetch(URL)
