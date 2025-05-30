@@ -3,9 +3,6 @@
 Aplicativo de previsão do tempo desenvolvido com HTML, CSS e JavaScript puro.  
 Consome dados da API do OpenWeatherMap para exibir informações meteorológicas atuais de qualquer cidade informada pelo usuário.
 
-## 🔗 Acesse o Projeto
-
-👉 [denisonesteves.github.io/weather-app](https://denisonesteves.github.io/weather-app/)
 ## 🚀 Funcionalidades
 
 - Busca por cidade
