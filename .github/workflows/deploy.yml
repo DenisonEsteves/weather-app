@@ -1,0 +1,38 @@
+name: Deploy Weather App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Ou a branch que você usa para deploy (ex: master, gh-pages)
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Use a versão mais recente
+
+      - name: Create config.js with API key
+        run: |
+          echo "export const API_KEY = '${{ secrets.WEATHER_API_KEY }}';" > config.js
+        # Se o seu script.js espera o config.js em outra pasta (ex: src/config.js),
+        # ajuste o caminho acima: echo "..." > src/config.js
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4 # Use a versão mais recente
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3 # Use a versão mais recente
+        with:
+          # Uploada o diretório raiz. Se seu site estivesse numa pasta 'dist' ou 'build',
+          # você mudaria o path para './dist' ou './build'
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # Use a versão mais recente
